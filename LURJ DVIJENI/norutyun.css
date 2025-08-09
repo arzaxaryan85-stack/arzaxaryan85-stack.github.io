@@ -1,0 +1,191 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% от высоты окна */
+}
+
+.verx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(17, 17, 17);
+  padding: 15px 50px;
+  border: 3px solid #6e2e15;
+  border-radius: 10px;
+  position: relative;
+
+  /* ВАЖНО: добавь это */
+  flex-shrink: 0; /* не позволяет сжиматься в флекс-родителе */
+}
+.fotoverxni{
+  width: 120px; 
+  height: auto;
+  border-radius: 20px; 
+
+  border: 2px solid #682300;    
+  font-size: 16px;        
+}
+ #language-selector { 
+  position: fixed;
+   top: 10px;
+    right: 10px;
+   background:#000000;
+   color: rgb(255, 81, 0);
+   border: 2px solid #832c00;  
+    border-radius: 9px;
+  }
+.GLXAVORVERNAGIR{
+  font-size: 3vw;
+  color: #611e04;
+text-shadow: -0px -1.1px rgb(245, 110, 42);
+}
+.opshiguyn{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #b74005;
+  color: aliceblue;
+}
+.tristraka{
+  width: 30px;
+  cursor: pointer;
+}
+.tristraka div{
+  height: 4px;
+  background-color: #611e04;;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+.menu {
+  position: fixed;  /* Закрепляем меню на весь экран */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  /* меню занимает всю ширину и высоту экрана */
+  background-color: rgba(0, 0, 0, 0.8);  /* затемнённый фон */
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease, visibility 0s 0.4s;  /* Плавное изменение */
+}
+
+.menu.show {
+  opacity: 1;
+  visibility: visible;  /* меню становится видимым */
+}
+
+.menu a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+.menu a:hover {
+  background-color: rgba(108, 42, 8, 0.2);  /* эффект при наведении */
+}
+
+
+
+/* Основной контент */
+.main-content {
+
+  flex: 1;
+  width: 70%;        /* или 95% */
+  padding: 30px;
+  margin: 0 auto;
+  background: #000000;
+  color: #c45620;
+  border-left: 3px solid #6e2e15;
+  border-right: 3px solid #6e2e15;
+}
+
+/* Футер */
+.site-footer {
+  background-color: #8b4303;
+  color: #ccc;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%
+}
+* {
+  box-sizing: inherit; /* Чтобы padding и border не ломали ширину */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;  /* очень важно */
+}
+
+.verx {
+  width: 100%;  /* Обязательно */
+  box-sizing: border-box;
+  padding: 15px 20px;
+}
+
+.main-content {
+  width: 100%;     /* раньше было 70% — это ломает */
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .verx {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .GLXAVORVERNAGIR {
+    font-size: 5vw;
+  }
+}
+.vernagir2 {
+  text-align: center;
+
+}
+.mecnkar {
+  width: 100%;
+  background-attachment: fixed;
+}
+.blokimejitext{
+  color:azure;
+  text-align: center;
+}
+.yashik1 {
+ border: 2px solid rgb(245, 110, 42);
+ width: 400px;
+ height: 350px;
+ margin: 0 auto;
+
+}
+.yashik1 img{
+  width: 100%;
+}
+.major{
+  color: azure;
+  
+}
+
+
+
+
